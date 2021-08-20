@@ -13,12 +13,14 @@ public class ExercicioDatas {
         System.out.println("Dia: " + dataMaio);
 
 
-        System.out.println("Sua Data de Nascimento é antes do dia 15 de Maio de 2010: " + isAfter);
+        if (isAfter)
+            System.out.println("Sua Data de Nascimento é depois do dia 15 de Maio de 2010");
 
 
 
         boolean isBefore = dataNasc.before(dataMaio);
-        System.out.println("Sua Data de Nascimento é antes do dia 15 de Maio de 2010: " + isBefore);
+        if(isBefore)
+            System.out.println("Sua Data de Nascimento é antes do dia 15 de Maio de 2010.");
     }
 }
 
